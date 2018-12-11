@@ -1,0 +1,49 @@
+	body {
+		background-color: #d9b38c;
+	}
+	h1 {
+		font-family: "Times New Roman", Times, serif;
+		text-align: center;
+		color: #261a0d;
+		font-style: italic;
+	}
+	.pastraipa {
+		font-family: "Times New Roman", Times, serif;
+		text-align: left;
+		color: #604020;
+		padding: 5px;
+	}
+	.pastraipa1 {
+		font-family: "Times New Roman", Times, serif;
+		text-align: left;
+		color: #261a0d;
+		text-decoration: underline;
+	}
+	.lentele {
+		width: 100%;
+		height: 300px;
+		padding: 15px;
+	}
+	.pirmaeilute {
+		font-family: "Times New Roman", Times, serif;
+		color: #261a0d;
+		font-style: italic;
+		text-align: center;
+		text-decoration: underline;
+	}
+	.patarimai {
+		font-family: "Times New Roman", Times, serif;
+		text-decoration: none;
+		font-style: italic;
+		text-align: left;
+		color: #261a0d;
+	}
+	.iliustracija {
+		width: "470";
+		height: "300";
+	}
+	#vardaspavarde1 {
+		font-family: "Times New Roman", Times, serif;
+		text-align: left;
+		color: #261a0d;
+	}

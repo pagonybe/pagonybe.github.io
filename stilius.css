@@ -1,0 +1,40 @@
+
+a: hover { color: #9999ff; font-size: 120 }
+a { text-decoration: none }
+h1 {color: #9999ff};
+
+table, td {border: 2px}
+table {background-color: #e6f2ff; width 80%; margin: auto; text-align: center;}
+
+.pirmaeilute
+{
+	height 180px;
+	color: #ff9933;
+}
+.antraeilute
+{
+	height 150px;
+	color: #ffcc66;
+}
+.treciaeilute
+{
+	height 150px;
+	color: #ffcc66;
+}
+.ketvirtaeilute
+{
+	height 150px;
+	color: #ffcc66;
+}
+.memas
+{
+	background-color: #d9b3ff;
+}
+.mires
+{
+	background-color: #d9b3ff;
+}
+.koubojus
+{
+	background-color: #d9b3ff;
+}
