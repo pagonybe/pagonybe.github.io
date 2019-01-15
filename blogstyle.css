@@ -1,0 +1,98 @@
+.titulinis {
+	max-height: 500px;
+	width: 1000px;
+	margin: auto;
+}
+header {
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+	color: #e6e6ff;
+}
+a:link {
+  text-decoration: underline;
+  color: #e6e6ff;
+}
+a:visited {
+  text-decoration: underline;
+  color: #e6e6ff;
+}
+a:hover {-webkit-animation:rainbow 1s infinite;
+		-ms-animation:rainbow 1s infinite;
+		-o-animation:rainbow 1s infinite;
+		animation:rainbow 1s infinite;
+		}
+		@-webkit-keyframes rainbow {
+		0% {color: #ff0000;}
+		10% {color: #ff8000;}
+		20% {color: #ffff00;}
+		30% {color: #80ff00;}
+		40% {color: #00ff00;}
+		50% {color: #00ff80;}
+		60% {color: #00ffff;}
+		70% {color: #0080ff;}
+		80% {color: #0000ff;}
+		90% {color: #8000ff;}
+		100% {color: #ff0080;}
+		}
+		@-ms-keyframes rainbow {
+		0% {color: #ff0000;}
+		10% {color: #ff8000;}
+		20% {color: #ffff00;}
+		30% {color: #80ff00;}
+		40% {color: #00ff00;}
+		50% {color: #00ff80;}
+		60% {color: #00ffff;}
+		70% {color: #0080ff;}
+		80% {color: #0000ff;}
+		90% {color: #8000ff;}
+		100% {color: #ff0080;}
+		}
+		@-o-keyframes rainbow {
+		0% {color: #ff0000;}
+		10% {color: #ff8000;}
+		20% {color: #ffff00;}
+		30% {color: #80ff00;}
+		40% {color: #00ff00;}
+		50% {color: #00ff80;}
+		60% {color: #00ffff;}
+		70% {color: #0080ff;}
+		80% {color: #0000ff;}
+		90% {color: #8000ff;}
+		100% {color: #ff0080;}
+		}
+		@keyframes rainbow {
+		0% {color: #ff0000;}
+		10% {color: #ff8000;}
+		20% {color: #ffff00;}
+		30% {color: #80ff00;}
+		40% {color: #00ff00;}
+		50% {color: #00ff80;}
+		60% {color: #00ffff;}
+		70% {color: #0080ff;}
+		80% {color: #0000ff;}
+		90% {color: #8000ff;}
+		100% {color: #ff0080;}
+		}
+
+a:active {
+  text-decoration: underline;
+  color: #e6e6ff;
+}
+body {
+	background-size: cover;
+	background-image: url("grazu.jpg");
+}
+li {
+	background: rgba(0, 0, 51, 0.5);
+	font-family: "Courier New", Courier, monospace;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 20px;
+}
+ul {
+	margin: auto;
+	padding: 20px;
+}
+img {
+	height: 200px;
+}
