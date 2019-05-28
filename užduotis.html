@@ -1,0 +1,198 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel ="stylesheet" type = "text/css" href ="matematikastilius.css">
+</head>
+<body class = "fonas">
+	<h1 id="antr"> <i> SMAGI MATEMATIKA! </i> </h1>
+	<p id="tekstas"> Atlikite žemiau pateiktas užduotis :) <br>
+		Pirma užduotis: </p>
+	<table class="lent">
+		<tr>
+			<td> 50 </td>
+			<td> / </td>
+			<td> 5 </td>
+			<td> = </td>
+			<td> <input id = "rezul1" type="number"> <button id="tikr1" class="mygt" onclick=TIKRINIMAS1()>TIKRINTI</button> </td>
+			<td id = "ats1"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> 11 </td>
+			<td> * </td>
+			<td> 4 </td>
+			<td> = </td>
+			<td> <input id = "rezul2" type="number"> <button id="tikr2" class="mygt" onclick=TIKRINIMAS2()>TIKRINTI</button> </td>
+			<td id = "ats2"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> 7 </td>
+			<td> * </td>
+			<td> 3 </td>
+			<td> = </td>
+			<td> <input id = "rezul3" type="number"> <button id="tikr3" class = "mygt" onclick=TIKRINIMAS3()>TIKRINTI</button> </td>
+			<td id = "ats3"> ATSAKYMAS </td>
+
+		</tr>
+		<tr>
+			<td> 42 </td>
+			<td> / </td>
+			<td> 6 </td>
+			<td> = </td>
+			<td> <input id = "rezul4" type="number"> <button id="tikr4" class = "mygt" onclick=TIKRINIMAS4()>TIKRINTI</button> </td>
+			<td id = "ats4"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> 16 </td>
+			<td> * </td>
+			<td> 2 </td>
+			<td> = </td>
+			<td> <input type="rezul5" id = "rezul5"> <button id="tikr5" class = "mygt" onclick=TIKRINIMAS5()>TIKRINTI</button> </td>
+			<td id = "ats5"> ATSAKYMAS </td>
+	</table>
+	<button id="tikr" onclick=ATSAKYMELIS() class = "mygt">BAIGTI</button>
+	<p id = "atsakymelis">  </p>
+	<img id="prizas" src="astar.png" class= "omg">
+
+	<p> Antra užduotis: </p>
+	<table class="lent">
+		<tr>
+			<td> 47 </td>
+			<td> + </td>
+			<td> 9 </td>
+			<td> = </td>
+			<td> <input id = "rezul21" type="number"> <button id="tikr21" class="mygt" onclick=TIKRINIMAS21()>TIKRINTI</button> </td>
+			<td id = "ats21"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> 6 </td>
+			<td> - </td>
+			<td> 3 </td>
+			<td> = </td>
+			<td> <input id = "rezul22" type="number"> <button id="tikr22" class="mygt" onclick=TIKRINIMAS22()>TIKRINTI</button> </td>
+			<td id = "ats22"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> 13 </td>
+			<td> + </td>
+			<td> 6 </td>
+			<td> = </td>
+			<td> <input id = "rezul23" type="number"> <button id="tikr23" class = "mygt" onclick=TIKRINIMAS23()>TIKRINTI</button> </td>
+			<td id = "ats23"> ATSAKYMAS </td>
+
+		</tr>
+		<tr>
+			<td> 58 </td>
+			<td> - </td>
+			<td> 10 </td>
+			<td> = </td>
+			<td> <input id = "rezul24" type="number"> <button id="tikr24" class = "mygt" onclick=TIKRINIMAS24()>TIKRINTI</button> </td>
+			<td id = "ats24"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> 14 </td>
+			<td> + </td>
+			<td> 32 </td>
+			<td> = </td>
+			<td> <input type="rezul25" id = "rezul25"> <button id="tikr25" class = "mygt" onclick=TIKRINIMAS25()>TIKRINTI</button> </td>
+			<td id = "ats25"> ATSAKYMAS </td>
+	</table>
+	<button id="tikr" onclick=ATSAKYMELIS2() class = "mygt">BAIGTI</button>
+	<p id = "atsakymelis2">  </p>
+	<img id="prizas2" src="astar.png" class= "omg">
+
+	<script>
+		document.getElementById("prizas").style.visibility="hidden";
+		document.getElementById("prizas2").style.visibility="hidden";
+		function TIKRINIMAS1()
+		{
+			if (document.getElementById("rezul1").value=="10")
+				document.getElementById("ats1").innerHTML="TEISINGAI";
+			else document.getElementById("ats1").innerHTML="NETEISINGAI";
+		}
+		function TIKRINIMAS2()
+		{
+			if (document.getElementById("rezul2").value=="44")
+				document.getElementById("ats2").innerHTML="TEISINGAI";
+			else document.getElementById("ats2").innerHTML="NETEISINGAI";
+		}
+		function TIKRINIMAS3()
+		{	
+			if (document.getElementById("rezul3").value=="21")
+				document.getElementById("ats3").innerHTML="TEISINGAI";
+			else document.getElementById("ats3").innerHTML="NETEISINGAI";
+		}
+		function TIKRINIMAS4()
+		{
+			if (document.getElementById("rezul4").value=="7")
+				document.getElementById("ats4").innerHTML="TEISINGAI";
+			else document.getElementById("ats4").innerHTML="NETEISINGAI";
+		}
+		function TIKRINIMAS5()
+		{
+			if (document.getElementById("rezul5").value=="32")
+				document.getElementById("ats5").innerHTML="TEISINGAI";
+			else document.getElementById("ats5").innerHTML="NETEISINGAI";
+		}
+		function ATSAKYMELIS()
+		{
+			if(document.getElementById("ats1").innerHTML == "TEISINGAI" && document.getElementById("ats2").innerHTML == "TEISINGAI" && document.getElementById("ats3").innerHTML == "TEISINGAI" &&document.getElementById("ats4").innerHTML == "TEISINGAI" && document.getElementById("ats5").innerHTML == "TEISINGAI") 
+				{
+					document.getElementById("atsakymelis").innerHTML="PUIKU";
+					document.getElementById("atsakymelis").style.visibility = "visible"
+					document.getElementById("prizas").style.visibility="hidden";
+				}
+			else 
+				{
+					document.getElementById("prizas").style.visibility = "visible"
+					document.getElementById("atsakymelis").style.visibility = "hidden";
+				};
+		}
+		function TIKRINIMAS21()
+		{
+			if (document.getElementById("rezul21").value=="56")
+				document.getElementById("ats21").innerHTML="TEISINGAI";
+			else document.getElementById("ats21").innerHTML="NETEISINGAI";
+		}
+		function TIKRINIMAS22()
+		{
+			if (document.getElementById("rezul22").value=="3")
+				document.getElementById("ats22").innerHTML="TEISINGAI";
+			else document.getElementById("ats22").innerHTML="NETEISINGAI";
+		}
+		function TIKRINIMAS23()
+		{	
+			if (document.getElementById("rezul23").value=="19")
+				document.getElementById("ats23").innerHTML="TEISINGAI";
+			else document.getElementById("ats23").innerHTML="NETEISINGAI";
+		}
+		function TIKRINIMAS24()
+		{
+			if (document.getElementById("rezul24").value=="48")
+				document.getElementById("ats24").innerHTML="TEISINGAI";
+			else document.getElementById("ats24").innerHTML="NETEISINGAI";
+		}
+		function TIKRINIMAS25()
+		{
+			if (document.getElementById("rezul25").value=="46")
+				document.getElementById("ats25").innerHTML="TEISINGAI";
+			else document.getElementById("ats25").innerHTML="NETEISINGAI";
+		}
+		function ATSAKYMELIS2()
+		{
+			if(document.getElementById("ats21").innerHTML == "TEISINGAI" && document.getElementById("ats22").innerHTML == "TEISINGAI" && document.getElementById("ats23").innerHTML == "TEISINGAI" &&document.getElementById("ats24").innerHTML == "TEISINGAI" && document.getElementById("ats25").innerHTML == "TEISINGAI") 
+			{
+				document.getElementById("atsakymelis2").innerHTML="PUIKU";
+				document.getElementById("atsakymelis2").style.visibility = "visible"
+				document.getElementById("prizas2").style.visibility="hidden";
+			}
+			else 
+				{
+					document.getElementById("prizas2").style.visibility = "visible";
+					document.getElementById("atsakymelis2").style.visibility = "hidden";
+				}
+		}
+
+	</script>
+
+</body>
+</html>
