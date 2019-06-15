@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="stiliuskort.css"> </head>
+<body class = "fonas">
+<script src="scriptkort.js"> </script>
+<h1 class="antr"> <i> Europos šalys ir jų vėliavos! </i> </h1>
+<p class ="intro"> Šis pažintinis žaidimas yra puikus būdas smagiai praleisti laiką bei susipažinti su Europos šalimis ir jų vėliavomis. Jūsų tikslas - vieną po kito atversti šalies vėliavą bei tos šalies pavadinimą (tarpusavio eilės tvarka nesvarbi). Tai padarius kortelės dingsta, o klaidingai pasirinkus pavadinimą arba vėliavą - paprasčiausiai užsiverčia ir Jūs žaidžiate toliau. Kortelių žaidimą laimite tada, kai kortelių nebelieka, ir galite išbandyti savo jėgas Europos sostinių apklausoje! </p>
+<label class="intro"> Jūsų vardas: </label> <input type="text" id="vardas" class="vardas" /> <button class="mygt" onclick=prad()> PRADĖTI </button>
+<table class="lent1" id="zaidimas"> 
+<tr> 
+<th> <img id="pav1" onclick=vert1() src="nug.jpeg"> </th>
+<th> <img id="pav2" onclick=vert2() src="nug.jpeg"> </th>
+<th> <img id="pav3" onclick=vert3() src="nug.jpeg"> </th>
+<th> <img id="pav4" onclick=vert4() src="nug.jpeg"> </th>
+</tr>
+<tr>
+<th> <img id="pav5" onclick=vert5() src="nug.jpeg"> </th>
+<th> <img id="pav6" onclick=vert6() src="nug.jpeg"> </th>
+<th> <img id="pav7" onclick=vert7() src="nug.jpeg"> </th>
+<th> <img id="pav8" onclick=vert8() src="nug.jpeg"> </th>
+</tr>
+</table>
+<table class="lent1" id="apklausa">
+		<tr>
+			<td> Slovėnijos sostinė yra: </td>
+			<td> <input id = "sost1" type="text"> <button class="mygt" onclick=TIKRINIMAS1()>TIKRINTI</button> </td>
+			<td id = "ats1"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> Norvegijos sostinė yra: </td>
+			<td> <input id = "sost2" type="text"> <button class="mygt" onclick=TIKRINIMAS2()>TIKRINTI</button> </td>
+			<td id = "ats2"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> Graikijos sostinė yra: </td>
+			<td> <input id = "sost3" type="text"> <button class="mygt" onclick=TIKRINIMAS3()>TIKRINTI</button> </td>
+			<td id = "ats3"> ATSAKYMAS </td>
+
+		</tr>
+		<tr>
+			<td> Estijos sostinė yra: </td>
+			<td> <input id = "sost4" type="text"> <button class="mygt" onclick=TIKRINIMAS4()>TIKRINTI</button> </td>
+			<td id = "ats4"> ATSAKYMAS </td>
+		</tr>
+		<tr>
+			<td> Šveicarijos sostinė yra: </td>
+			<td> <input id = "sost5" type="text"> <button class="mygt" onclick=TIKRINIMAS5()>TIKRINTI</button> </td>
+			<td id = "ats5"> ATSAKYMAS </td>
+	</table>
+	<button id = "baigti" onclick=apklats() class = "mygt"> BAIGTI </button>
+<script>
+document.getElementById("zaidimas").style.visibility = "hidden";
+document.getElementById("apklausa").style.visibility = "hidden";
+document.getElementById("sveikiname").style.visibility = "hidden";
+function prad()
+{
+document.getElementById("zaidimas").style.visibility = "visible";
+document.getElementById("apklausa").style.visibility = "visible";
+document.getElementById("baigti").style.visibility = "visible";
+}
+function apklats()
+		{
+			if(document.getElementById("ats1").innerHTML == "TEISINGAI" && document.getElementById("ats2").innerHTML == "TEISINGAI" && document.getElementById("ats3").innerHTML == "TEISINGAI" &&document.getElementById("ats4").innerHTML == "TEISINGAI" && document.getElementById("ats5").innerHTML == "TEISINGAI") 
+				{
+					document.getElementById("apklausa").style.visibility = "hidden";
+					document.getElementById("baigti").style.visibility = "hidden";
+					var vardas = document.getElementById('vardas').value;
+					var sveikiname = "Sveikiname, " + vardas + ", teisingai atsakėte į visus apklausos klausimus :)";
+
+					alert(sveikiname);
+				}
+				else 
+				{
+					var vardas = document.getElementById('vardas').value;
+					var suklydote = "Suklydote, " + vardas + ", peržvelkite atsakymus ir bandykite dar kartą! :)";
+
+					alert(suklydote);
+				}
+			}
+</script>
+</body>
+</html>
+
