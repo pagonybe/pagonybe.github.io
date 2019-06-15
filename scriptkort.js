@@ -28,7 +28,7 @@ du++;
 priespav=pav;
 priesid=id;
 }
-else if (du==2) //paskutiniai du blogi tai uzdarom juos
+else if (du==2)
 {
 document.getElementById(buvo).src="nug.jpeg";
 document.getElementById(priesbuvo).src="nug.jpeg";
