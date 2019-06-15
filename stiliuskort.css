@@ -31,7 +31,7 @@ table.lent1
     margin-right: auto;
     margin-left: auto;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    padding: 15px;
+    padding: 20px;
 }
 .mygt:hover {
 -webkit-animation:rainbow 1s infinite;
@@ -93,20 +93,20 @@ animation:rainbow 1s infinite;
 }
 td, tr
 {
-    padding: 10px;
-}
-.omg
-{
-    height: 230px;
+    padding:20px;
 }
 .antr
 {
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
     text-decoration: none;
-
 }
 img 
 {
     height: 200px;
+}
+input
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-image: linear-gradient(to right, #f8def3, #f2d6f4, #eacff7, #dfc8fb, #d0c3ff);
 }
